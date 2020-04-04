@@ -1,0 +1,566 @@
+{
+	"info": {
+		"_postman_id": "f017edb9-2a6b-4999-9794-c669931d5efa",
+		"name": "MC API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Statistic By Day",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/api/mc/reports?branchID=185&fromDay=2019-01-01&toDay=2019-12-25&type=day",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"mc",
+						"reports"
+					],
+					"query": [
+						{
+							"key": "branchID",
+							"value": "185"
+						},
+						{
+							"key": "fromDay",
+							"value": "2019-01-01"
+						},
+						{
+							"key": "toDay",
+							"value": "2019-12-25"
+						},
+						{
+							"key": "type",
+							"value": "day"
+						},
+						{
+							"key": "value",
+							"value": "50",
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": "2019",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistic By Month",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/api/mc/reports?branchID=185&fromMonth=2019-12&toMonth=2019-12&type=month",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"mc",
+						"reports"
+					],
+					"query": [
+						{
+							"key": "branchID",
+							"value": "185"
+						},
+						{
+							"key": "fromMonth",
+							"value": "2019-12"
+						},
+						{
+							"key": "toMonth",
+							"value": "2019-12"
+						},
+						{
+							"key": "type",
+							"value": "month"
+						},
+						{
+							"key": "value",
+							"value": "50",
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": "2019",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistic By Week",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/api/mc/reports?branchID=185&type=week&value=50&year=2019",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"mc",
+						"reports"
+					],
+					"query": [
+						{
+							"key": "branchID",
+							"value": "185"
+						},
+						{
+							"key": "fromMonth",
+							"value": "2019-12",
+							"disabled": true
+						},
+						{
+							"key": "toMonth",
+							"value": "2019-12",
+							"disabled": true
+						},
+						{
+							"key": "type",
+							"value": "week"
+						},
+						{
+							"key": "value",
+							"value": "50"
+						},
+						{
+							"key": "year",
+							"value": "2019"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistic By Quarter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/api/mc/reports?branchID=185&type=quarter&value=4&year=2019",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"mc",
+						"reports"
+					],
+					"query": [
+						{
+							"key": "branchID",
+							"value": "185"
+						},
+						{
+							"key": "fromMonth",
+							"value": "2019-12",
+							"disabled": true
+						},
+						{
+							"key": "toMonth",
+							"value": "2019-12",
+							"disabled": true
+						},
+						{
+							"key": "type",
+							"value": "quarter"
+						},
+						{
+							"key": "value",
+							"value": "4"
+						},
+						{
+							"key": "year",
+							"value": "2019"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistic By Year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/api/mc/reports?branchID=185&type=year&value=2019",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"mc",
+						"reports"
+					],
+					"query": [
+						{
+							"key": "branchID",
+							"value": "185"
+						},
+						{
+							"key": "fromMonth",
+							"value": "2019-12",
+							"disabled": true
+						},
+						{
+							"key": "toMonth",
+							"value": "2019-12",
+							"disabled": true
+						},
+						{
+							"key": "type",
+							"value": "year"
+						},
+						{
+							"key": "value",
+							"value": "2019"
+						},
+						{
+							"key": "year",
+							"value": "2019",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get booking by Year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/api/mc/bookings?branchID=185&type=week&value=50&year=2019",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"mc",
+						"bookings"
+					],
+					"query": [
+						{
+							"key": "branchID",
+							"value": "185"
+						},
+						{
+							"key": "type",
+							"value": "week",
+							"description": "day, week, quarter, month, year"
+						},
+						{
+							"key": "value",
+							"value": "50"
+						},
+						{
+							"key": "year",
+							"value": "2019"
+						},
+						{
+							"key": "state",
+							"value": "awaiting_confirmation",
+							"description": "awaiting_confirmation, confirm, declined,canceled, checked_in, done",
+							"disabled": true
+						},
+						{
+							"key": "fromMonth",
+							"value": "2019-11",
+							"disabled": true
+						},
+						{
+							"key": "toMonth",
+							"value": "2019-11",
+							"disabled": true
+						},
+						{
+							"key": "fromDay",
+							"value": "2019-12-01",
+							"disabled": true
+						},
+						{
+							"key": "toDay",
+							"value": "2019-12-26",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get booking by Quarter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/api/mc/bookings?branchID=185&type=quarter&value=4&year=2019",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"mc",
+						"bookings"
+					],
+					"query": [
+						{
+							"key": "branchID",
+							"value": "185"
+						},
+						{
+							"key": "type",
+							"value": "quarter",
+							"description": "day, week, quarter, month, year"
+						},
+						{
+							"key": "value",
+							"value": "4"
+						},
+						{
+							"key": "year",
+							"value": "2019"
+						},
+						{
+							"key": "state",
+							"value": "awaiting_confirmation",
+							"description": "awaiting_confirmation, confirm, declined,canceled, checked_in, done",
+							"disabled": true
+						},
+						{
+							"key": "fromMonth",
+							"value": "2019-11",
+							"disabled": true
+						},
+						{
+							"key": "toMonth",
+							"value": "2019-11",
+							"disabled": true
+						},
+						{
+							"key": "fromDay",
+							"value": "2019-12-01",
+							"disabled": true
+						},
+						{
+							"key": "toDay",
+							"value": "2019-12-26",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get booking by Month",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/api/mc/bookings?branchID=185&type=month&fromMonth=2019-12&toMonth=2019-12",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"mc",
+						"bookings"
+					],
+					"query": [
+						{
+							"key": "branchID",
+							"value": "185"
+						},
+						{
+							"key": "type",
+							"value": "month",
+							"description": "day, week, quarter, month, year"
+						},
+						{
+							"key": "value",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": "2019",
+							"disabled": true
+						},
+						{
+							"key": "state",
+							"value": "awaiting_confirmation",
+							"description": "awaiting_confirmation, confirm, declined,canceled, checked_in, done",
+							"disabled": true
+						},
+						{
+							"key": "fromMonth",
+							"value": "2019-12"
+						},
+						{
+							"key": "toMonth",
+							"value": "2019-12"
+						},
+						{
+							"key": "fromDay",
+							"value": "2019-12-01",
+							"disabled": true
+						},
+						{
+							"key": "toDay",
+							"value": "2019-12-26",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get booking by Day",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/api/mc/bookings?branchID=185&type=day&fromDay=2019-12-01&toDay=2019-12-26",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"mc",
+						"bookings"
+					],
+					"query": [
+						{
+							"key": "branchID",
+							"value": "185"
+						},
+						{
+							"key": "type",
+							"value": "day",
+							"description": "day, week, quarter, month, year"
+						},
+						{
+							"key": "value",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": "2019",
+							"disabled": true
+						},
+						{
+							"key": "state",
+							"value": "awaiting_confirmation",
+							"description": "awaiting_confirmation, confirm, declined,canceled, checked_in, done",
+							"disabled": true
+						},
+						{
+							"key": "fromMonth",
+							"value": "2019-12",
+							"disabled": true
+						},
+						{
+							"key": "toMonth",
+							"value": "2019-12",
+							"disabled": true
+						},
+						{
+							"key": "fromDay",
+							"value": "2019-12-01"
+						},
+						{
+							"key": "toDay",
+							"value": "2019-12-26"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get booking by Week",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/api/mc/bookings?branchID=185&type=week&value=50&year=2019",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"mc",
+						"bookings"
+					],
+					"query": [
+						{
+							"key": "branchID",
+							"value": "185"
+						},
+						{
+							"key": "type",
+							"value": "week",
+							"description": "day, week, quarter, month, year"
+						},
+						{
+							"key": "value",
+							"value": "50"
+						},
+						{
+							"key": "year",
+							"value": "2019"
+						},
+						{
+							"key": "state",
+							"value": "awaiting_confirmation",
+							"description": "awaiting_confirmation, confirm, declined,canceled, checked_in, done",
+							"disabled": true
+						},
+						{
+							"key": "fromMonth",
+							"value": "2019-12",
+							"disabled": true
+						},
+						{
+							"key": "toMonth",
+							"value": "2019-12",
+							"disabled": true
+						},
+						{
+							"key": "fromDay",
+							"value": "2019-12-01",
+							"disabled": true
+						},
+						{
+							"key": "toDay",
+							"value": "2019-12-26",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": []
+}

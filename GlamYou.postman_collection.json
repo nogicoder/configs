@@ -1,0 +1,498 @@
+{
+	"info": {
+		"_postman_id": "ea82c1e5-45c2-44d9-a9a2-a4249c72e2a9",
+		"name": "GlamYou",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loginId",
+							"value": "0833831993",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/users/login",
+					"protocol": "https",
+					"host": [
+						"dev1925-dot-eternal-autumn-232109",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loginId",
+									"value": "0833831993",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/users/login",
+							"protocol": "https",
+							"host": [
+								"dev1925-dot-eternal-autumn-232109",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "QCTOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzk4NzM0NzQsImp0aSI6IjhmMTE0OGQ4LWIyZDEtNGUwOS1hOGFlLWU1YzFmODRiNTllZSIsImlhdCI6MTU3OTcwMDY3NH0.W6GIm1XTTcSOdxdIjyVDLC4Tl72R_OPAtFmO671J-tw; Path=/; Domain=dev-dot-eternal-autumn-232109.appspot.com; Expires=Fri, 24 Jan 2020 13:44:34 GMT; Max-Age=172800; HttpOnly; Secure"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "c1cac2531b0153781008725f125f33c7;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Jan 2020 13:44:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "427"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 22 Jan 2020 13:44:34 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzk4NzM0NzQsImp0aSI6IjhmMTE0OGQ4LWIyZDEtNGUwOS1hOGFlLWU1YzFmODRiNTllZSIsImlhdCI6MTU3OTcwMDY3NH0.W6GIm1XTTcSOdxdIjyVDLC4Tl72R_OPAtFmO671J-tw\",\n    \"user\": {\n        \"id\": 139,\n        \"createdAt\": \"2019-07-12T11:04:50.478118Z\",\n        \"updatedAt\": \"2019-10-25T06:13:12.695119Z\",\n        \"name\": \"Bach Salon\",\n        \"email\": \"bach.tempo@gmail.com\",\n        \"mobile\": \"0833831993\",\n        \"mobileVerified\": true,\n        \"gender\": false,\n        \"isHost\": true\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Facebook Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "accesstoken",
+							"value": "EAAR74ZCZBqBZBIBAA3ZCC2r5CdCOBLBx9YEARCZALPOZCs5BeVKY8XHCNzfZAMsZAlZARDOoYDvfZBZCgvidLOCr8ZCQ2O2hE99NWRZC4ZAiI2tHyZBDZAPP3zqSAMkwNHZBnM0NihUKrBZCABfkmObvlD5ydcGjvpK5VRoqI1ZBjWVBahZAFJQfIoZCIWo962TTUgrXK4c9oZBVrchZCWhDh7y7Ta2Vs1IYAtRoFCDdbcrNvsZD",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://glamstyle-api-dev.qcoop.vn/api/oauth/facebook/login",
+					"protocol": "https",
+					"host": [
+						"glamstyle-api-dev",
+						"qcoop",
+						"vn"
+					],
+					"path": [
+						"api",
+						"oauth",
+						"facebook",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loginId",
+									"value": "0833831993",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/users/login",
+							"protocol": "https",
+							"host": [
+								"dev1925-dot-eternal-autumn-232109",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "QCTOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzk4NzM0NzQsImp0aSI6IjhmMTE0OGQ4LWIyZDEtNGUwOS1hOGFlLWU1YzFmODRiNTllZSIsImlhdCI6MTU3OTcwMDY3NH0.W6GIm1XTTcSOdxdIjyVDLC4Tl72R_OPAtFmO671J-tw; Path=/; Domain=dev-dot-eternal-autumn-232109.appspot.com; Expires=Fri, 24 Jan 2020 13:44:34 GMT; Max-Age=172800; HttpOnly; Secure"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "c1cac2531b0153781008725f125f33c7;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Jan 2020 13:44:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "427"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 22 Jan 2020 13:44:34 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzk4NzM0NzQsImp0aSI6IjhmMTE0OGQ4LWIyZDEtNGUwOS1hOGFlLWU1YzFmODRiNTllZSIsImlhdCI6MTU3OTcwMDY3NH0.W6GIm1XTTcSOdxdIjyVDLC4Tl72R_OPAtFmO671J-tw\",\n    \"user\": {\n        \"id\": 139,\n        \"createdAt\": \"2019-07-12T11:04:50.478118Z\",\n        \"updatedAt\": \"2019-10-25T06:13:12.695119Z\",\n        \"name\": \"Bach Salon\",\n        \"email\": \"bach.tempo@gmail.com\",\n        \"mobile\": \"0833831993\",\n        \"mobileVerified\": true,\n        \"gender\": false,\n        \"isHost\": true\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"createdAt\": \"string\",\n  \"updatedAt\": \"string\",\n  \"name\": \"string\",\n  \"email\": \"string\",\n  \"mobile\": \"string\",\n  \"description\": \"string\",\n  \"emailVerified\": true,\n  \"mobileVerified\": true,\n  \"dob\": \"string\",\n  \"gender\": true,\n  \"isHost\": true,\n  \"city\": \"string\",\n  \"district\": \"string\",\n  \"streetAddress\": \"string\",\n  \"latitude\": \"string\",\n  \"longitude\": \"string\"\n}"
+				},
+				"url": {
+					"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/users/signup",
+					"protocol": "https",
+					"host": [
+						"dev1925-dot-eternal-autumn-232109",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loginId",
+									"value": "0833831993",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/users/login",
+							"protocol": "https",
+							"host": [
+								"dev1925-dot-eternal-autumn-232109",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "QCTOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzk4NzM0NzQsImp0aSI6IjhmMTE0OGQ4LWIyZDEtNGUwOS1hOGFlLWU1YzFmODRiNTllZSIsImlhdCI6MTU3OTcwMDY3NH0.W6GIm1XTTcSOdxdIjyVDLC4Tl72R_OPAtFmO671J-tw; Path=/; Domain=dev-dot-eternal-autumn-232109.appspot.com; Expires=Fri, 24 Jan 2020 13:44:34 GMT; Max-Age=172800; HttpOnly; Secure"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "c1cac2531b0153781008725f125f33c7;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Jan 2020 13:44:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "427"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 22 Jan 2020 13:44:34 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzk4NzM0NzQsImp0aSI6IjhmMTE0OGQ4LWIyZDEtNGUwOS1hOGFlLWU1YzFmODRiNTllZSIsImlhdCI6MTU3OTcwMDY3NH0.W6GIm1XTTcSOdxdIjyVDLC4Tl72R_OPAtFmO671J-tw\",\n    \"user\": {\n        \"id\": 139,\n        \"createdAt\": \"2019-07-12T11:04:50.478118Z\",\n        \"updatedAt\": \"2019-10-25T06:13:12.695119Z\",\n        \"name\": \"Bach Salon\",\n        \"email\": \"bach.tempo@gmail.com\",\n        \"mobile\": \"0833831993\",\n        \"mobileVerified\": true,\n        \"gender\": false,\n        \"isHost\": true\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Forgot Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"createdAt\": \"string\",\n  \"updatedAt\": \"string\",\n  \"name\": \"string\",\n  \"email\": \"string\",\n  \"mobile\": \"string\",\n  \"description\": \"string\",\n  \"emailVerified\": true,\n  \"mobileVerified\": true,\n  \"dob\": \"string\",\n  \"gender\": true,\n  \"isHost\": true,\n  \"city\": \"string\",\n  \"district\": \"string\",\n  \"streetAddress\": \"string\",\n  \"latitude\": \"string\",\n  \"longitude\": \"string\"\n}"
+				},
+				"url": {
+					"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/users/signup",
+					"protocol": "https",
+					"host": [
+						"dev1925-dot-eternal-autumn-232109",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loginId",
+									"value": "0833831993",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/users/login",
+							"protocol": "https",
+							"host": [
+								"dev1925-dot-eternal-autumn-232109",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "QCTOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzk4NzM0NzQsImp0aSI6IjhmMTE0OGQ4LWIyZDEtNGUwOS1hOGFlLWU1YzFmODRiNTllZSIsImlhdCI6MTU3OTcwMDY3NH0.W6GIm1XTTcSOdxdIjyVDLC4Tl72R_OPAtFmO671J-tw; Path=/; Domain=dev-dot-eternal-autumn-232109.appspot.com; Expires=Fri, 24 Jan 2020 13:44:34 GMT; Max-Age=172800; HttpOnly; Secure"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "c1cac2531b0153781008725f125f33c7;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Jan 2020 13:44:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "427"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 22 Jan 2020 13:44:34 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzk4NzM0NzQsImp0aSI6IjhmMTE0OGQ4LWIyZDEtNGUwOS1hOGFlLWU1YzFmODRiNTllZSIsImlhdCI6MTU3OTcwMDY3NH0.W6GIm1XTTcSOdxdIjyVDLC4Tl72R_OPAtFmO671J-tw\",\n    \"user\": {\n        \"id\": 139,\n        \"createdAt\": \"2019-07-12T11:04:50.478118Z\",\n        \"updatedAt\": \"2019-10-25T06:13:12.695119Z\",\n        \"name\": \"Bach Salon\",\n        \"email\": \"bach.tempo@gmail.com\",\n        \"mobile\": \"0833831993\",\n        \"mobileVerified\": true,\n        \"gender\": false,\n        \"isHost\": true\n    }\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}

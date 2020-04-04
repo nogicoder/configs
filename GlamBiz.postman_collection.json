@@ -1,0 +1,811 @@
+{
+	"info": {
+		"_postman_id": "eb7dae8e-d0a2-49eb-885f-9fc39161855a",
+		"name": "GlamBiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Development",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loginId",
+									"value": "0833831993",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://dev1927-dot-eternal-autumn-232109.appspot.com/api/users/login",
+							"protocol": "https",
+							"host": [
+								"dev1927-dot-eternal-autumn-232109",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						},
+						"description": "Using phone and PW"
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "loginId",
+											"value": "0833831993",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/users/login",
+									"protocol": "https",
+									"host": [
+										"dev1925-dot-eternal-autumn-232109",
+										"appspot",
+										"com"
+									],
+									"path": [
+										"api",
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "QCTOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzEzMzEwNTEsImp0aSI6IjJlNTY2Yjc0LWIxYTQtNGUxNi1hNzU2LWQ1MzQ4NjlhZWNkYSIsImlhdCI6MTU3MTE1ODI1MX0.mP7ns26q8eSt73N14zQZpiLNl3jev6DxcpN_5sUbkHs; Path=/; Domain=dev-dot-eternal-autumn-232109.appspot.com; Expires=Thu, 17 Oct 2019 16:50:51 GMT; Max-Age=172800; HttpOnly; Secure"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "c9921cdffbc61f829733b1abcf46fa7f;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Oct 2019 16:50:51 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "427"
+								},
+								{
+									"key": "Expires",
+									"value": "Tue, 15 Oct 2019 16:50:51 GMT"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzEzMzEwNTEsImp0aSI6IjJlNTY2Yjc0LWIxYTQtNGUxNi1hNzU2LWQ1MzQ4NjlhZWNkYSIsImlhdCI6MTU3MTE1ODI1MX0.mP7ns26q8eSt73N14zQZpiLNl3jev6DxcpN_5sUbkHs\",\n    \"user\": {\n        \"id\": 139,\n        \"createdAt\": \"2019-07-12T11:04:50.478118Z\",\n        \"updatedAt\": \"2019-09-09T17:06:44.705327Z\",\n        \"name\": \"Bach Salon\",\n        \"email\": \"bach.tempo@gmail.com\",\n        \"mobile\": \"0833831993\",\n        \"mobileVerified\": true,\n        \"gender\": false,\n        \"isHost\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "List branches",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzEzMjY1ODYsImp0aSI6IjYwODE5MWJmLTk1OGItNGYyMC05NDE0LTM0YTc3YjNiNWI3OCIsImlhdCI6MTU3MTE1Mzc4Nn0.FgX8GN-2s_ptlZPIVK7lcS_16BbJNfgG1NlhyQSrSbo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/user/branches",
+							"protocol": "https",
+							"host": [
+								"dev1925-dot-eternal-autumn-232109",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"branches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzg4MjUzOTQsImp0aSI6IjA4N2ZmNTJlLTgyNzctNGY1YS1iYTQ5LThjNzNlN2YwZWE0YyIsImlhdCI6MTU3ODY1MjU5NH0.ZJZukiBr6r7yzgKg-M3cmV0W_aTg2QRNaLu3nf8AIgQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/v2/branches/247/services",
+							"protocol": "https",
+							"host": [
+								"dev1925-dot-eternal-autumn-232109",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"branches",
+								"247",
+								"services"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List services",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/user/branches/247/services",
+									"protocol": "https",
+									"host": [
+										"dev1925-dot-eternal-autumn-232109",
+										"appspot",
+										"com"
+									],
+									"path": [
+										"api",
+										"user",
+										"branches",
+										"247",
+										"services"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "223d671f4ef2ea0151c54a9e75a95fd0;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Oct 2019 16:51:15 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3219"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 448,\n        \"createdAt\": \"2019-09-06T08:40:49.946309Z\",\n        \"updatedAt\": \"2019-09-06T08:40:49.946309Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nam\",\n        \"description\": \"\",\n        \"category\": \"\",\n        \"note\": \"\",\n        \"price\": 10000,\n        \"taxRate\": 0,\n        \"spots\": 99,\n        \"durationInMinutes\": 60,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 449,\n        \"createdAt\": \"2019-09-06T08:40:50.954571Z\",\n        \"updatedAt\": \"2019-09-06T08:40:50.954571Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nam\",\n        \"description\": \"\",\n        \"category\": \"\",\n        \"note\": \"\",\n        \"price\": 10000,\n        \"taxRate\": 0,\n        \"spots\": 99,\n        \"durationInMinutes\": 60,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 450,\n        \"createdAt\": \"2019-09-06T08:41:43.390241Z\",\n        \"updatedAt\": \"2019-09-06T08:41:43.390241Z\",\n        \"branchId\": 247,\n        \"name\": \"Phong cách buzz\",\n        \"description\": \"\",\n        \"category\": \"\",\n        \"note\": \"\",\n        \"price\": 100000,\n        \"taxRate\": 0,\n        \"spots\": 99,\n        \"durationInMinutes\": 15,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 452,\n        \"createdAt\": \"2019-09-06T09:05:45.577032Z\",\n        \"updatedAt\": \"2019-09-06T09:05:45.577032Z\",\n        \"branchId\": 247,\n        \"name\": \"Tóc nam hàn quốc\",\n        \"description\": \"\",\n        \"category\": \"\",\n        \"note\": \"\",\n        \"price\": 90000,\n        \"taxRate\": 0,\n        \"spots\": 99,\n        \"durationInMinutes\": 10,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 451,\n        \"createdAt\": \"2019-09-06T08:57:31.544434Z\",\n        \"updatedAt\": \"2019-10-15T08:37:50.204023Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc basic\",\n        \"description\": \"Được tặng 1 chiếc lược sau khi sử dụng dịch vụ\",\n        \"category\": \"NewClientOffer\",\n        \"note\": \"\",\n        \"price\": 200,\n        \"taxRate\": 0,\n        \"spots\": 99,\n        \"durationInMinutes\": 30,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"inactive\"\n    },\n    {\n        \"id\": 483,\n        \"createdAt\": \"2019-10-15T09:25:29.320671Z\",\n        \"updatedAt\": \"2019-10-15T09:25:29.320671Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nữ\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc nữ\",\n        \"note\": \"\",\n        \"price\": 50,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 9,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 485,\n        \"createdAt\": \"2019-10-15T10:06:52.21298Z\",\n        \"updatedAt\": \"2019-10-15T10:06:52.21298Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nam\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc nam\",\n        \"note\": \"\",\n        \"price\": 60,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 56,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 486,\n        \"createdAt\": \"2019-10-15T11:11:46.929761Z\",\n        \"updatedAt\": \"2019-10-15T11:11:46.929761Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nam\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc nam\",\n        \"note\": \"\",\n        \"price\": 200000,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 30,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 487,\n        \"createdAt\": \"2019-10-15T11:34:59.216361Z\",\n        \"updatedAt\": \"2019-10-15T11:34:59.216361Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nam hàn quốc\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc nam\",\n        \"note\": \"\",\n        \"price\": 8000,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 800,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 488,\n        \"createdAt\": \"2019-10-15T11:38:20.353838Z\",\n        \"updatedAt\": \"2019-10-15T11:38:20.353838Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc cho bé\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc cho bé\",\n        \"note\": \"\",\n        \"price\": 55000,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 45,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 489,\n        \"createdAt\": \"2019-10-15T11:39:29.237869Z\",\n        \"updatedAt\": \"2019-10-15T11:39:29.237869Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc tém\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc nữ\",\n        \"note\": \"\",\n        \"price\": 88,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 12,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "List categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzg4MjUzOTQsImp0aSI6IjA4N2ZmNTJlLTgyNzctNGY1YS1iYTQ5LThjNzNlN2YwZWE0YyIsImlhdCI6MTU3ODY1MjU5NH0.ZJZukiBr6r7yzgKg-M3cmV0W_aTg2QRNaLu3nf8AIgQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/branches/247/categoryconfigurations",
+							"protocol": "https",
+							"host": [
+								"dev1925-dot-eternal-autumn-232109",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"branches",
+								"247",
+								"categoryconfigurations"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/branches/247/categoryconfigurations",
+									"protocol": "https",
+									"host": [
+										"dev1925-dot-eternal-autumn-232109",
+										"appspot",
+										"com"
+									],
+									"path": [
+										"api",
+										"branches",
+										"247",
+										"categoryconfigurations"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "fc5bb6f222aa31c92be724f898d776a0;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 10 Jan 2020 10:40:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1793"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"branchId\": 247,\n    \"category\": \"[{\\\"categoryName\\\":\\\"\\\",\\\"serviceList\\\":[],\\\"index\\\":-1},{\\\"categoryName\\\":\\\"ak\\\",\\\"serviceList\\\":[{\\\"id\\\":571,\\\"branchId\\\":247,\\\"name\\\":\\\"ah\\\",\\\"description\\\":\\\"ha\\\",\\\"type\\\":\\\"PROMOTION\\\",\\\"originPrice\\\":7000.0,\\\"price\\\":6000.0,\\\"discountType\\\":\\\"amount\\\",\\\"discount\\\":15,\\\"isActive\\\":true,\\\"isOnlyCall\\\":false,\\\"isPowerBooking\\\":false,\\\"validFrom\\\":\\\"2019-11-18T07:06:35.759324Z\\\",\\\"validTo\\\":\\\"2019-11-18T07:06:35.759324Z\\\",\\\"taxRate\\\":0.0,\\\"durationInMinutes\\\":89},{\\\"id\\\":579,\\\"branchId\\\":247,\\\"name\\\":\\\"Cắt tóc nữ\\\",\\\"description\\\":\\\"\\\",\\\"type\\\":\\\"NORMAL\\\",\\\"originPrice\\\":6.0,\\\"price\\\":6.0,\\\"discountType\\\":\\\"\\\",\\\"discount\\\":0,\\\"isActive\\\":true,\\\"isOnlyCall\\\":false,\\\"isPowerBooking\\\":false,\\\"validFrom\\\":null,\\\"validTo\\\":null,\\\"taxRate\\\":0.0,\\\"durationInMinutes\\\":6}],\\\"index\\\":0},{\\\"categoryName\\\":\\\"hala\\\",\\\"serviceList\\\":[{\\\"id\\\":577,\\\"branchId\\\":247,\\\"name\\\":\\\"h\\\",\\\"description\\\":\\\"Cắt tóc nữ, Cắt tóc tém, Cắt tóc layer nữ, Cắt ngắn sau gáy\\\",\\\"type\\\":\\\"COMBO\\\",\\\"originPrice\\\":60.0,\\\"price\\\":50.0,\\\"discountType\\\":\\\"amount\\\",\\\"discount\\\":17,\\\"isActive\\\":true,\\\"isOnlyCall\\\":false,\\\"isPowerBooking\\\":false,\\\"validFrom\\\":null,\\\"validTo\\\":null,\\\"taxRate\\\":0.0,\\\"durationInMinutes\\\":60}],\\\"index\\\":3},{\\\"categoryName\\\":\\\"all\\\",\\\"serviceList\\\":[{\\\"id\\\":562,\\\"name\\\":\\\"Combo cho mẹ và bé\\\",\\\"price\\\":200000.0,\\\"durationInMinutes\\\":60}],\\\"index\\\":5},{\\\"categoryName\\\":\\\"Combo\\\",\\\"serviceList\\\":[{\\\"id\\\":581,\\\"name\\\":\\\"Combo 1\\\",\\\"price\\\":12000.0,\\\"durationInMinutes\\\":30}],\\\"index\\\":7},{\\\"categoryName\\\":\\\"NewClientOffer\\\",\\\"serviceList\\\":[{\\\"id\\\":561,\\\"name\\\":\\\"Phong cách buzz\\\",\\\"price\\\":80000.0,\\\"durationInMinutes\\\":800}],\\\"index\\\":9}]\",\n    \"createdAt\": \"2019-10-24T16:23:18.769706Z\",\n    \"updatedAt\": \"2020-01-10T10:05:43.183091Z\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Production",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loginId",
+									"value": "0906481879",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "vu@qcoop.vn",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://glamstyle-api-dev.qcoop.vn/api/users/login",
+							"protocol": "https",
+							"host": [
+								"glamstyle-api-dev",
+								"qcoop",
+								"vn"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List branches",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzEzMjY1ODYsImp0aSI6IjYwODE5MWJmLTk1OGItNGYyMC05NDE0LTM0YTc3YjNiNWI3OCIsImlhdCI6MTU3MTE1Mzc4Nn0.FgX8GN-2s_ptlZPIVK7lcS_16BbJNfgG1NlhyQSrSbo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glamstyle-api-dev.qcoop.vn/api/user/branches",
+							"protocol": "https",
+							"host": [
+								"glamstyle-api-dev",
+								"qcoop",
+								"vn"
+							],
+							"path": [
+								"api",
+								"user",
+								"branches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List bookings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQ3MjE1MjIsImp0aSI6ImZlMzY5YmU1LTRhOTEtNGEzMC1iYzczLWM3N2MwNzc2ZDczMSIsImlhdCI6MTU3MjEyOTUyMn0.uSqHwAofOg3qNnEaVYrfS3j1xKL_PFQA6Lz_kqS4Z40",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/javascript",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://glamstyle-api-dev.qcoop.vn/api/user/branches/247/bookings?from=2019-10-23T00:00:00Z&to=2019-10-29T00:00:00Z",
+							"protocol": "https",
+							"host": [
+								"glamstyle-api-dev",
+								"qcoop",
+								"vn"
+							],
+							"path": [
+								"api",
+								"user",
+								"branches",
+								"247",
+								"bookings"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2019-10-23T00:00:00Z"
+								},
+								{
+									"key": "to",
+									"value": "2019-10-29T00:00:00Z"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "https://glamstyle-api-dev.qcoop.vn/api/users/branches?page=1&page_size=100&order_by=id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/javascript",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://glamstyle-api-dev.qcoop.vn/api/user/branches/247/bookings?from=2019-09-23T00:00:00Z&to=2019-09-29T00:00:00Z",
+									"protocol": "https",
+									"host": [
+										"glamstyle-api-dev",
+										"qcoop",
+										"vn"
+									],
+									"path": [
+										"api",
+										"user",
+										"branches",
+										"247",
+										"bookings"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": "2019-09-23T00:00:00Z"
+										},
+										{
+											"key": "to",
+											"value": "2019-09-29T00:00:00Z"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 22 Sep 2019 08:52:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "59489e1bd99b84f4c87fe3669e59bea5;o=1"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "51a30b94f91bd9a8-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 579,\n        \"branchId\": 247,\n        \"branchInfo\": {\n            \"name\": \"Bach (Chris)\",\n            \"contactName\": \"Bach (Chris)\",\n            \"city\": \"TP Hồ Chí Minh\",\n            \"district\": \"Quận 1\",\n            \"streetAddress\": \"322 Duong 3 Thang 2\"\n        },\n        \"services\": [\n            {\n                \"id\": 489,\n                \"name\": \"Phong cách buzz\",\n                \"price\": 500000,\n                \"duration\": 0\n            },\n            {\n                \"id\": 490,\n                \"name\": \"Phong cách buzz\",\n                \"price\": 500000,\n                \"duration\": 0\n            }\n        ],\n        \"userId\": 131,\n        \"userInfo\": {\n            \"name\": \"Bach\",\n            \"email\": \"bachm.biz@gmail.com\",\n            \"mobile\": \"0938184492\",\n            \"city\": \"\",\n            \"district\": \"\",\n            \"streetAddress\": \"\"\n        },\n        \"bookedFrom\": \"2019-09-23T02:00:00Z\",\n        \"bookedTo\": \"2019-09-23T02:30:00Z\",\n        \"paidAt\": null,\n        \"notes\": \"\",\n        \"paymentMethod\": \"cash\",\n        \"state\": \"confirm\",\n        \"totalPrice\": 1000000,\n        \"promoCode\": \"\",\n        \"cancelationReason\": \"\",\n        \"cancelledBy\": \"\",\n        \"declineReason\": \"\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Decline Booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzE3MTk2NTIsImp0aSI6IjI4Nzc0NzIwLTdkOGItNDk2Zi1hY2NhLTc4MjYzNmZkYTYxOCIsImlhdCI6MTU2OTEyNzY1Mn0.xEu4PgSrCfoD-IO94Dofy1U5GvQLejMxxvUjy8RjDOk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reason",
+									"value": "\"Full\"",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://glamstyle-api-dev.qcoop.vn/api/bookings/583/decline",
+							"protocol": "https",
+							"host": [
+								"glamstyle-api-dev",
+								"qcoop",
+								"vn"
+							],
+							"path": [
+								"api",
+								"bookings",
+								"583",
+								"decline"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get host avatar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glamstyle-api-dev.qcoop.vn/api/branches/247/images?type=avatar",
+							"protocol": "https",
+							"host": [
+								"glamstyle-api-dev",
+								"qcoop",
+								"vn"
+							],
+							"path": [
+								"api",
+								"branches",
+								"247",
+								"images"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "avatar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzUxMzIzNjksImp0aSI6ImI3NzU2ZjgxLTQ1YmYtNGUwZC04N2UwLTY0NDQ2NDlmOWMzYSIsImlhdCI6MTU3MjU0MDM2OX0.QSU2MWqrbRBkLP-BOd4XMEHSJCIf5UZK9x-ROaMH8ak",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glamstyle-api-dev.qcoop.vn/api/v2/branches/1/services",
+							"protocol": "https",
+							"host": [
+								"glamstyle-api-dev",
+								"qcoop",
+								"vn"
+							],
+							"path": [
+								"api",
+								"v2",
+								"branches",
+								"1",
+								"services"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List services",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev1925-dot-eternal-autumn-232109.appspot.com/api/user/branches/247/services",
+									"protocol": "https",
+									"host": [
+										"dev1925-dot-eternal-autumn-232109",
+										"appspot",
+										"com"
+									],
+									"path": [
+										"api",
+										"user",
+										"branches",
+										"247",
+										"services"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "223d671f4ef2ea0151c54a9e75a95fd0;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Oct 2019 16:51:15 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3219"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 448,\n        \"createdAt\": \"2019-09-06T08:40:49.946309Z\",\n        \"updatedAt\": \"2019-09-06T08:40:49.946309Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nam\",\n        \"description\": \"\",\n        \"category\": \"\",\n        \"note\": \"\",\n        \"price\": 10000,\n        \"taxRate\": 0,\n        \"spots\": 99,\n        \"durationInMinutes\": 60,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 449,\n        \"createdAt\": \"2019-09-06T08:40:50.954571Z\",\n        \"updatedAt\": \"2019-09-06T08:40:50.954571Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nam\",\n        \"description\": \"\",\n        \"category\": \"\",\n        \"note\": \"\",\n        \"price\": 10000,\n        \"taxRate\": 0,\n        \"spots\": 99,\n        \"durationInMinutes\": 60,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 450,\n        \"createdAt\": \"2019-09-06T08:41:43.390241Z\",\n        \"updatedAt\": \"2019-09-06T08:41:43.390241Z\",\n        \"branchId\": 247,\n        \"name\": \"Phong cách buzz\",\n        \"description\": \"\",\n        \"category\": \"\",\n        \"note\": \"\",\n        \"price\": 100000,\n        \"taxRate\": 0,\n        \"spots\": 99,\n        \"durationInMinutes\": 15,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 452,\n        \"createdAt\": \"2019-09-06T09:05:45.577032Z\",\n        \"updatedAt\": \"2019-09-06T09:05:45.577032Z\",\n        \"branchId\": 247,\n        \"name\": \"Tóc nam hàn quốc\",\n        \"description\": \"\",\n        \"category\": \"\",\n        \"note\": \"\",\n        \"price\": 90000,\n        \"taxRate\": 0,\n        \"spots\": 99,\n        \"durationInMinutes\": 10,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 451,\n        \"createdAt\": \"2019-09-06T08:57:31.544434Z\",\n        \"updatedAt\": \"2019-10-15T08:37:50.204023Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc basic\",\n        \"description\": \"Được tặng 1 chiếc lược sau khi sử dụng dịch vụ\",\n        \"category\": \"NewClientOffer\",\n        \"note\": \"\",\n        \"price\": 200,\n        \"taxRate\": 0,\n        \"spots\": 99,\n        \"durationInMinutes\": 30,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"inactive\"\n    },\n    {\n        \"id\": 483,\n        \"createdAt\": \"2019-10-15T09:25:29.320671Z\",\n        \"updatedAt\": \"2019-10-15T09:25:29.320671Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nữ\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc nữ\",\n        \"note\": \"\",\n        \"price\": 50,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 9,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 485,\n        \"createdAt\": \"2019-10-15T10:06:52.21298Z\",\n        \"updatedAt\": \"2019-10-15T10:06:52.21298Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nam\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc nam\",\n        \"note\": \"\",\n        \"price\": 60,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 56,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 486,\n        \"createdAt\": \"2019-10-15T11:11:46.929761Z\",\n        \"updatedAt\": \"2019-10-15T11:11:46.929761Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nam\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc nam\",\n        \"note\": \"\",\n        \"price\": 200000,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 30,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 487,\n        \"createdAt\": \"2019-10-15T11:34:59.216361Z\",\n        \"updatedAt\": \"2019-10-15T11:34:59.216361Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc nam hàn quốc\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc nam\",\n        \"note\": \"\",\n        \"price\": 8000,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 800,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 488,\n        \"createdAt\": \"2019-10-15T11:38:20.353838Z\",\n        \"updatedAt\": \"2019-10-15T11:38:20.353838Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc cho bé\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc cho bé\",\n        \"note\": \"\",\n        \"price\": 55000,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 45,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    },\n    {\n        \"id\": 489,\n        \"createdAt\": \"2019-10-15T11:39:29.237869Z\",\n        \"updatedAt\": \"2019-10-15T11:39:29.237869Z\",\n        \"branchId\": 247,\n        \"name\": \"Cắt tóc tém\",\n        \"description\": \"\",\n        \"category\": \"Cắt tóc nữ\",\n        \"note\": \"\",\n        \"price\": 88,\n        \"taxRate\": 0,\n        \"spots\": 0,\n        \"durationInMinutes\": 12,\n        \"recurrenceInMinutes\": 0,\n        \"state\": \"active\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "List ratings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzU3NDQ4NjUsImp0aSI6IjFkMDNjOGIyLTAyZmQtNDUxNy05MzJhLTM1MThhOTM1MGEwOCIsImlhdCI6MTU3MzE1Mjg2NX0.hx-QyHnSCE3dULQGXJ_7eHdU7DQmU68iVWaC-bpjE6w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glamstyle-api-dev.qcoop.vn/api/feedbacks?branchID=1",
+							"protocol": "https",
+							"host": [
+								"glamstyle-api-dev",
+								"qcoop",
+								"vn"
+							],
+							"path": [
+								"api",
+								"feedbacks"
+							],
+							"query": [
+								{
+									"key": "branchID",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	]
+}

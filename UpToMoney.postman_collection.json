@@ -1,0 +1,381 @@
+{
+	"info": {
+		"_postman_id": "62dccaa6-f982-4fba-a30b-e282b81361a0",
+		"name": "UpToMoney",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OTP Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "841233831993",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "516071",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://uptomoney.noelcodes.com/accounts/login/",
+					"protocol": "http",
+					"host": [
+						"uptomoney",
+						"noelcodes",
+						"com"
+					],
+					"path": [
+						"accounts",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OTP Request Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "84833831993",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://uptomoney.noelcodes.com/accounts/otp/",
+					"protocol": "http",
+					"host": [
+						"uptomoney",
+						"noelcodes",
+						"com"
+					],
+					"path": [
+						"accounts",
+						"otp",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Requirements",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 00e9ed421c6a222378a4a232c55a6f6cdecdffa2",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/bachmai/Desktop/test1.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://uptomoney.noelcodes.com/requirements/17/",
+					"protocol": "http",
+					"host": [
+						"uptomoney",
+						"noelcodes",
+						"com"
+					],
+					"path": [
+						"requirements",
+						"17",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Requirements",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 00e9ed421c6a222378a4a232c55a6f6cdecdffa2",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://uptomoney.noelcodes.com/requirements/",
+							"protocol": "http",
+							"host": [
+								"uptomoney",
+								"noelcodes",
+								"com"
+							],
+							"path": [
+								"requirements",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "gunicorn/20.0.4"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 20 Mar 2020 07:17:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1751"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Phone Number\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": true,\n        \"value\": null\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Aadhar Image\",\n        \"type\": \"Image Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": \"https://uptomoney.s3.amazonaws.com/uploads/2FA.png\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Facebook ID\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Email Address\",\n        \"type\": \"Email Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Number of Years of Experience\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Current Employer\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Number of years with current employer\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Bank Account Number\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Bank Name\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 14,\n        \"name\": \"IFSC Code\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Graduation Marksheet Image\",\n        \"type\": \"Image Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 5,\n        \"name\": \"12th Marksheet Image\",\n        \"type\": \"Image Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 4,\n        \"name\": \"10th Marksheet Image\",\n        \"type\": \"Image Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Selfie\",\n        \"type\": \"Image Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Aadhar number\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": \"12345687\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Requirements Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 00e9ed421c6a222378a4a232c55a6f6cdecdffa2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"value": "test@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://uptomoney.noelcodes.com/requirements/",
+					"protocol": "http",
+					"host": [
+						"uptomoney",
+						"noelcodes",
+						"com"
+					],
+					"path": [
+						"requirements",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Requirements",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 00e9ed421c6a222378a4a232c55a6f6cdecdffa2",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://uptomoney.noelcodes.com/requirements/",
+							"protocol": "http",
+							"host": [
+								"uptomoney",
+								"noelcodes",
+								"com"
+							],
+							"path": [
+								"requirements",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "gunicorn/20.0.4"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 20 Mar 2020 07:17:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1751"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Phone Number\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": true,\n        \"value\": null\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Aadhar Image\",\n        \"type\": \"Image Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": \"https://uptomoney.s3.amazonaws.com/uploads/2FA.png\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Facebook ID\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Email Address\",\n        \"type\": \"Email Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Number of Years of Experience\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Current Employer\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Number of years with current employer\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Bank Account Number\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Bank Name\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 14,\n        \"name\": \"IFSC Code\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Graduation Marksheet Image\",\n        \"type\": \"Image Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 5,\n        \"name\": \"12th Marksheet Image\",\n        \"type\": \"Image Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 4,\n        \"name\": \"10th Marksheet Image\",\n        \"type\": \"Image Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Selfie\",\n        \"type\": \"Image Field\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": null\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Aadhar number\",\n        \"type\": \"Text Field (single line)\",\n        \"provider\": \"user\",\n        \"required\": false,\n        \"value\": \"12345687\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "OTP Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "841233831993",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "516071",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://uptomoney.noelcodes.com/accounts/login/",
+					"protocol": "http",
+					"host": [
+						"uptomoney",
+						"noelcodes",
+						"com"
+					],
+					"path": [
+						"accounts",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

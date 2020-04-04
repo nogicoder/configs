@@ -1,0 +1,406 @@
+{
+	"info": {
+		"_postman_id": "2d83786e-f7ff-4c75-987d-f7fe4ba13c04",
+		"name": "Promotion API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Branch Promotions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Black Friday\",\n    \"branchID\": 185,\n    \"isActive\": true,\n    \"services\": [\n        275,\n        276\n    ],\n    \"monTime\": [\n        {\n            \"fromTime\": \"10:00\",\n            \"toTime\": \"13:00\",\n            \"discount\": 50\n        },\n        {\n            \"fromTime\": \"8:00\",\n            \"toTime\": \"9:00\",\n            \"discount\": 60\n        },\n        {\n            \"fromTime\": \"9:00\",\n            \"toTime\": \"10:00\",\n            \"discount\": 60\n        },\n        {\n            \"fromTime\": \"15:00\",\n            \"toTime\": \"17:00\",\n            \"discount\": 20\n        }\n    ],\n    \"tueTime\": [\n        {\n            \"fromTime\": \"13:00\",\n            \"toTime\": \"15:00\",\n            \"discount\": 20\n        },\n        {\n            \"fromTime\": \"8:00\",\n            \"toTime\": \"9:00\",\n            \"discount\": 80\n        },\n        {\n            \"fromTime\": \"9:00\",\n            \"toTime\": \"12:00\",\n            \"discount\": 35\n        },\n        {\n            \"fromTime\": \"15:00\",\n            \"toTime\": \"17:00\",\n            \"discount\": 20\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/api/promotions",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"promotions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Black Friday\",\n    \"branchID\": 185,\n    \"isActive\": true,\n    \"services\": [\n        275,\n        276\n    ],\n    \"monTime\": [\n        {\n            \"fromTime\": \"10:00\",\n            \"toTime\": \"13:00\",\n            \"discount\": 50\n        },\n        {\n            \"fromTime\": \"8:00\",\n            \"toTime\": \"9:00\",\n            \"discount\": 60\n        },\n        {\n            \"fromTime\": \"9:00\",\n            \"toTime\": \"10:00\",\n            \"discount\": 60\n        },\n        {\n            \"fromTime\": \"15:00\",\n            \"toTime\": \"17:00\",\n            \"discount\": 20\n        }\n    ],\n    \"tueTime\": [\n        {\n            \"fromTime\": \"13:00\",\n            \"toTime\": \"15:00\",\n            \"discount\": 20\n        },\n        {\n            \"fromTime\": \"8:00\",\n            \"toTime\": \"9:00\",\n            \"discount\": 80\n        },\n        {\n            \"fromTime\": \"9:00\",\n            \"toTime\": \"12:00\",\n            \"discount\": 35\n        },\n        {\n            \"fromTime\": \"15:00\",\n            \"toTime\": \"17:00\",\n            \"discount\": 20\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/promotions",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"promotions"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 06 Dec 2019 03:27:48 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "593"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 22,\n    \"name\": \"Black Friday\",\n    \"branchID\": 185,\n    \"isActive\": true,\n    \"services\": [\n        275,\n        276\n    ],\n    \"monTime\": [\n        {\n            \"fromTime\": \"8:00\",\n            \"toTime\": \"9:00\",\n            \"discount\": 60\n        },\n        {\n            \"fromTime\": \"9:00\",\n            \"toTime\": \"10:00\",\n            \"discount\": 60\n        },\n        {\n            \"fromTime\": \"10:00\",\n            \"toTime\": \"13:00\",\n            \"discount\": 50\n        },\n        {\n            \"fromTime\": \"15:00\",\n            \"toTime\": \"17:00\",\n            \"discount\": 20\n        }\n    ],\n    \"tueTime\": [\n        {\n            \"fromTime\": \"8:00\",\n            \"toTime\": \"9:00\",\n            \"discount\": 80\n        },\n        {\n            \"fromTime\": \"9:00\",\n            \"toTime\": \"12:00\",\n            \"discount\": 35\n        },\n        {\n            \"fromTime\": \"13:00\",\n            \"toTime\": \"15:00\",\n            \"discount\": 20\n        },\n        {\n            \"fromTime\": \"15:00\",\n            \"toTime\": \"17:00\",\n            \"discount\": 20\n        }\n    ],\n    \"wedTime\": null,\n    \"thuTime\": null,\n    \"friTime\": null,\n    \"satTime\": null,\n    \"sunTime\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Change info Branch Promotions",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Black Friday\",\n    \"branchID\": 185,\n    \"isActive\": true,\n    \"services\": [\n        275,\n        276\n    ],\n    \"monTime\": [\n        {\n            \"fromTime\": \"10:00\",\n            \"toTime\": \"13:00\",\n            \"discount\": 50\n        },\n        {\n            \"fromTime\": \"8:00\",\n            \"toTime\": \"9:00\",\n            \"discount\": 35\n        },\n        {\n            \"fromTime\": \"9:00\",\n            \"toTime\": \"10:00\",\n            \"discount\": 25\n        },\n        {\n            \"fromTime\": \"15:00\",\n            \"toTime\": \"17:00\",\n            \"discount\": 20\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/api/promotions/19",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"promotions",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Active Branch Promotions",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isActive\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/api/promotions/19?action=changestate",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"promotions",
+						"19"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "changestate"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Branch Promotions Host",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/api/promotions?",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"promotions"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "host",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/promotions?",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"promotions"
+							],
+							"query": [
+								{
+									"key": "action",
+									"value": "host",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 06 Dec 2019 03:28:24 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1580"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 21,\n        \"name\": \"Black Friday\",\n        \"branchID\": 185,\n        \"isActive\": true,\n        \"services\": [\n            275,\n            276\n        ],\n        \"monTime\": [\n            {\n                \"fromTime\": \"8:00\",\n                \"toTime\": \"9:00\",\n                \"discount\": 60\n            },\n            {\n                \"fromTime\": \"9:00\",\n                \"toTime\": \"10:00\",\n                \"discount\": 60\n            },\n            {\n                \"fromTime\": \"10:00\",\n                \"toTime\": \"13:00\",\n                \"discount\": 50\n            },\n            {\n                \"fromTime\": \"15:00\",\n                \"toTime\": \"17:00\",\n                \"discount\": 20\n            }\n        ],\n        \"tueTime\": [\n            {\n                \"fromTime\": \"8:00\",\n                \"toTime\": \"9:00\",\n                \"discount\": 80\n            },\n            {\n                \"fromTime\": \"9:00\",\n                \"toTime\": \"12:00\",\n                \"discount\": 35\n            },\n            {\n                \"fromTime\": \"13:00\",\n                \"toTime\": \"15:00\",\n                \"discount\": 20\n            },\n            {\n                \"fromTime\": \"15:00\",\n                \"toTime\": \"17:00\",\n                \"discount\": 20\n            }\n        ],\n        \"wedTime\": null,\n        \"thuTime\": null,\n        \"friTime\": null,\n        \"satTime\": null,\n        \"sunTime\": null\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Black Friday\",\n        \"branchID\": 185,\n        \"isActive\": false,\n        \"services\": [\n            275,\n            276\n        ],\n        \"monTime\": [\n            {\n                \"fromTime\": \"8:00\",\n                \"toTime\": \"9:00\",\n                \"discount\": 35\n            },\n            {\n                \"fromTime\": \"9:00\",\n                \"toTime\": \"10:00\",\n                \"discount\": 25\n            },\n            {\n                \"fromTime\": \"10:00\",\n                \"toTime\": \"13:00\",\n                \"discount\": 50\n            },\n            {\n                \"fromTime\": \"15:00\",\n                \"toTime\": \"17:00\",\n                \"discount\": 20\n            }\n        ],\n        \"tueTime\": null,\n        \"wedTime\": null,\n        \"thuTime\": null,\n        \"friTime\": null,\n        \"satTime\": null,\n        \"sunTime\": null\n    },\n    {\n        \"id\": 22,\n        \"name\": \"Black Friday\",\n        \"branchID\": 185,\n        \"isActive\": true,\n        \"services\": [\n            275,\n            276\n        ],\n        \"monTime\": [\n            {\n                \"fromTime\": \"8:00\",\n                \"toTime\": \"9:00\",\n                \"discount\": 60\n            },\n            {\n                \"fromTime\": \"9:00\",\n                \"toTime\": \"10:00\",\n                \"discount\": 60\n            },\n            {\n                \"fromTime\": \"10:00\",\n                \"toTime\": \"13:00\",\n                \"discount\": 50\n            },\n            {\n                \"fromTime\": \"15:00\",\n                \"toTime\": \"17:00\",\n                \"discount\": 20\n            }\n        ],\n        \"tueTime\": [\n            {\n                \"fromTime\": \"8:00\",\n                \"toTime\": \"9:00\",\n                \"discount\": 80\n            },\n            {\n                \"fromTime\": \"9:00\",\n                \"toTime\": \"12:00\",\n                \"discount\": 35\n            },\n            {\n                \"fromTime\": \"13:00\",\n                \"toTime\": \"15:00\",\n                \"discount\": 20\n            },\n            {\n                \"fromTime\": \"15:00\",\n                \"toTime\": \"17:00\",\n                \"discount\": 20\n            }\n        ],\n        \"wedTime\": null,\n        \"thuTime\": null,\n        \"friTime\": null,\n        \"satTime\": null,\n        \"sunTime\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Branch Promotions For User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/api/promotions?branchID=185",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"promotions"
+					],
+					"query": [
+						{
+							"key": "branchID",
+							"value": "185"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Branch Promotions Host",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Black Friday\",\n\t\"branchID\": 169,\n\t\"services\": [182, 141, 113],\n\t\"monTime\": [{ \"fromTime\": \"10:00\", \"toTime\": \"19:00\", \"discount\": 50  }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/api/promotions/20",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"promotions",
+						"20"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "456a9b52-b039-48c5-9b76-cc7a626feb4f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "96e8ac8a-76c1-492b-b282-62e8e47375a3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": []
+}
