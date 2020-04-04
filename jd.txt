@@ -1,0 +1,130 @@
+9cv9
+
+As a Software Engineer (Mobile), you will be responsible for developing mobile applications, SDKs and RESTful services. Working individually and as a team, you should adopt an Agile methodological approach to develop mobile software components & frameworks. There will be many opportunities to explore new tech stacks and to work on advanced technologies.
+
+What Does a Software Engineer (Mobile) Do?
+
+– Support full software development lifecycle for new and existing mobile applications, SDKs and RESTful services
+
+– Build highly secure, obfuscated static library that is app store / google play store compliant to be deployed on client mobile devices
+
+– Build reusable iOS/Android software components and develop mobile frameworks based on best practices
+
+– Conduct software performance analysis, scaling, tuning and optimization
+
+– Write clean, testable code to ensure reliable and secure applications
+
+– Documentation of application requirements, design, test, integration and other related processes
+
+– Explore and design new fraud prevention components specific to mobile usages and user experiences
+
+– Improve and update fraud prevention systems to enhance performance, scalability and capacity
+
+What You Need
+
+– Minimum 5 years of experience in mobile development. Talents who possess higher degree of expertise will be considered for senior opportunities
+
+– Degree in Computer Science, Software Engineering or equivalent
+
+– Strong understanding of Computer Science fundamentals in algorithms and data structures
+
+– Experience in developing iOS/Android applications, SDKs and RESTful services with Swift/Objective-C, Java/Kotlin and JavaScript
+
+– Experience in using RESTful APIs to integrate mobile applications to server-side systems
+
+– Good knowledge of MySQL, MongoDB and other relational/NoSQL databases
+
+– Familiar with iOS and Android development tools (Xcode, CocoaPods, Android Studio, Gradle, Fastlane etc.)
+
+– Understanding of mobile architectures and design principles for iOS and Android
+
+– Excellent coding practices including good design documentation, unit testing, source control (Git)
+
+– Prior experience in e-payments or e-commerce industry is a plus
+
+– Strong interpersonal, communication and presentation skills
+
+What we Offer
+
+– Competitive remuneration package which includes AWS and performance bonus
+
+– Gym, Shower and VR/chillax room
+
+– Fully stocked pantry with coconut water, coffee and ice cream
+
+– Medical insurance and Food & Transport claims
+
+The Company Culture
+
+– Open and collaborative working environment with a diverse and international team
+
+– Flexible work hours
+
+– Casual dress code (if cosplay is your game, then bring it on!)
+
+– Weekly Get-Together to unwind and bond
+
+Salary: NegotiableWorking
+
+Location: Singapore
+
+
+--
+Pobble 
+
+Top 3 Reasons To Join Us
+Incredible challenging environment
+Great chance to impact hundred millions of users
+Friendly, passionate & talented colleagues
+The Job
+Develop world-class iOS/Android mobile app:
+
+Analyze requirements.
+Collaborate strongly with team for integrating Machine Learning models and developing new features;
+Development, maintenance of applications aimed at a range of iOS/Android devices (mobile phones, tablets, computers) and integration with back-end services
+Ensure the performance, quality, and responsiveness of applications
+Explore new technologies to solve technical challenges.
+Participates in design/code reviews
+Support team member in technical issues.
+Your Skills and Experience
+Must-have Skills
+
+*** iOS Developer (02 Senior, 01Junior)
+ 
+
+At least 3-year experience of developing and engineering applications as an iOS mobile developer
+Solid knowledge of REST APIs, proficient in handling JSON/XML and integrated with Firebase, AWS Mobile,...
+Experience with SDKs, and third-party analysis tools
+Experience with TDD, and mobile app testing
+Expert level knowledge in SWIFT 3/4, MVVM/MVC, Objective C, Cocoa, XCode, iOS SDK, Core Graphics, Core Animation,....
+*** Android Developer
+
+(02 Senior, 01Junior)
+
+At least 3-year experience of developing and engineering applications as an Android mobile developer
+Expert level knowledge in one of the following technology areas: Kotlin, Java, Android SDK, Android Studio
+Experience with performance and memory tuning with tools
+Experience with Security Protocols: SSL and Security Mechanisms like Client certificates, Basic Authentication, Authentication Tokens, OAuth and OpenId
+Familiarity with new technology such as: Jetpack, AndroidX, Android Architecture Component (LiveData, ViewModel)
+Common Requirements
+
+Clean code, easy to maintain
+Familiarity with UI/UX standards
+Solid understanding of the full mobile development life cycle from development to distribution
+High level of commitment & responsibilities
+Excellent teamwork spirit
+Delivery tasks on time
+B.S or M.S Computer Science or equivalent working experience
+Preferred to have
+
+Demonstrable portfolio of released applications on the Apple App Store and Google Play
+Working experience with Agile planning and development methodologies, continuous integration, and continuous on time delivery
+Why You'll Love Working Here
+Very attractive salaries & allowances that commensurate with work experience
+13th month salary & performance bonus
+Performance review: twice a year
+Have a chance to develop your career and access new technologies
+Weekly tech talk
+Opportunity to receive stocks of the company
+Opportunities to have business trips in Southeast Asia;
+Company trip, Team Building activities, Happy Hour;
